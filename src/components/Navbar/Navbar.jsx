@@ -26,6 +26,9 @@ export default function Navbar() {
         <div className="navbar-profile">
             <img src={profile_img} alt="profile-img" className='profile' />
             <img src={caret_icon} alt="caret-icon" className='icons' />
+            <div className='dropdown'>
+              <p className='dropdown-text'>Sign out of Netflix</p>
+            </div>
         </div>
       </div>
     </div>

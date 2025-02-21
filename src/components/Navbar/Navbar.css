@@ -3,7 +3,7 @@
   padding: 20px 6%;
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   font-size: 14px;
   color: #e5e5e5;
   background-color: linear-gradient(
@@ -34,5 +34,42 @@
 }
 .nav-right{
     display: flex;
+    gap: 20px;
+    align-items: center;
 
+}
+.nav-right .icons{
+width: 20px;
+cursor:pointer;
+}
+.nav-right .profile{
+border-radius: 4px;
+width:35px;
+}
+.navbar-profile{
+  position: relative;
+  display: flex;
+  align-items:center;
+  gap:10px;
+  cursor:pointer;
+}
+.navbar-profile .dropdown{
+  position: absolute;
+  top:100%;
+  right: 0%;
+  width:max-content;
+  background-color: #191919;
+  border-radius:2px;
+  text-decoration:underline;
+  padding:16px 20px;
+  z-index: 1;
+  display:none;
+
+}
+.dropdown .dropdown-text{
+  font-size:13px;
+  cursor:pointer;
+}
+.navbar-profile:hover .dropdown{
+display: block;
 }
