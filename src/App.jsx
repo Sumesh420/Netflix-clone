@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider,useNavigate } from 'react-router-dom';
-
+import { ToastContainer, toast } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 import { auth } from './firebase'; // Import Firebase auth
 import Layout from './components/Layout.jsx';
 import Player from './pages/Players/Player.jsx'
@@ -20,7 +21,10 @@ const router=createBrowserRouter(
 )
 function App() {
   return (
+  <>
+    <ToastContainer theme='dark'/>
 <RouterProvider router={router} />
+</>
   )
 }
 
