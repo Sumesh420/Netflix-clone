@@ -60,9 +60,9 @@ export default function Login() {
     if(!validate()) return 
     setLoader(true);
     if(signState==="Sign In"){
-      logIn(email,password);
+     await logIn(email,password);
     }else{
-      signUp(name,email,password);
+     await signUp(name,email,password);
     }
     setLoader(false);
   }
